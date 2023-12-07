@@ -1,0 +1,36 @@
+body{
+    background: rgb(89, 89, 219);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#container{
+    height: 300px;
+    width: 300px;
+    background-color: whitesmoke;
+    box-shadow: blue 10px 10px;
+    /* overflow: hidden; */
+    border-radius: 20px; /*for round edges*/
+
+}
+
+#container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /*to fit the image in the box*/
+    border-radius: 20px; /*for round edges*/
+}   
+#container i{
+    
+    color: white;
+    font-size: 80px;
+    position: absolute; /* means positions is fixed */
+    top: 20%; /* position of the heart on the whole blue page */
+    left: 50%; /* position of the heart on the whole blue page*/
+    transform: translate(-50%,-50%) scale(0); /* heart's position(center) on the picture , 
+                                             scale(0) means the heart will be shown very smaller(size 0) on the center of the dog picture*/
+    opacity: 0; /*at first opacity will be 0*/
+    transition: all ease 0.2; /* speed of appearing the heart*/
+
+    
+}
